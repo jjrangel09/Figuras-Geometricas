@@ -5,6 +5,8 @@
  */
 package edu.unicundi;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author JuanJ
@@ -18,17 +20,13 @@ public class Ventana extends javax.swing.JFrame {
         initComponents();
     }
 
-    public void dibujar() {
-        try {
-        Plano plano = new Plano();
+    public void dibujar(int[] aux) {
+        Plano plano = new Plano(aux);
         plano.setBounds(200, 10, 250, 250);
-        this.removeAll();
-        this.add(plano);
-        this.revalidate();
-        this.repaint();
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        panelPlano.removeAll();
+        panelPlano.add(plano);
+        panelPlano.revalidate();
+        panelPlano.repaint();
     }
 
     /**
@@ -47,8 +45,8 @@ public class Ventana extends javax.swing.JFrame {
         lblX4 = new javax.swing.JLabel();
         campX1 = new javax.swing.JTextField();
         campX2 = new javax.swing.JTextField();
-        campoX3 = new javax.swing.JTextField();
-        campoX4 = new javax.swing.JTextField();
+        campX3 = new javax.swing.JTextField();
+        campX4 = new javax.swing.JTextField();
         lblY1 = new javax.swing.JLabel();
         lblY2 = new javax.swing.JLabel();
         lblY3 = new javax.swing.JLabel();
@@ -65,11 +63,11 @@ public class Ventana extends javax.swing.JFrame {
         campY6 = new javax.swing.JTextField();
         lblX7 = new javax.swing.JLabel();
         campY7 = new javax.swing.JTextField();
-        campX3 = new javax.swing.JTextField();
+        campX5 = new javax.swing.JTextField();
         campY8 = new javax.swing.JTextField();
-        campX4 = new javax.swing.JTextField();
-        campoX5 = new javax.swing.JTextField();
-        campoX6 = new javax.swing.JTextField();
+        campX6 = new javax.swing.JTextField();
+        campX7 = new javax.swing.JTextField();
+        campX8 = new javax.swing.JTextField();
         lblCuadrado1 = new javax.swing.JLabel();
         lblX8 = new javax.swing.JLabel();
         lblY7 = new javax.swing.JLabel();
@@ -81,15 +79,16 @@ public class Ventana extends javax.swing.JFrame {
         campY9 = new javax.swing.JTextField();
         campY10 = new javax.swing.JTextField();
         campY11 = new javax.swing.JTextField();
-        campX5 = new javax.swing.JTextField();
-        campX6 = new javax.swing.JTextField();
-        campoX7 = new javax.swing.JTextField();
+        campX9 = new javax.swing.JTextField();
+        campX10 = new javax.swing.JTextField();
+        campX11 = new javax.swing.JTextField();
         lblCuadrado2 = new javax.swing.JLabel();
         lblX11 = new javax.swing.JLabel();
         lblY11 = new javax.swing.JLabel();
         jButtonCuadro = new javax.swing.JButton();
         jButtonRectangulo = new javax.swing.JButton();
         jButtonTriangulo = new javax.swing.JButton();
+        panelPlano = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -110,9 +109,9 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
-        campoX3.addActionListener(new java.awt.event.ActionListener() {
+        campX3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoX3ActionPerformed(evt);
+                campX3ActionPerformed(evt);
             }
         });
 
@@ -146,15 +145,15 @@ public class Ventana extends javax.swing.JFrame {
 
         lblX7.setText("X4:");
 
-        campX3.addActionListener(new java.awt.event.ActionListener() {
+        campX5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campX3ActionPerformed(evt);
+                campX5ActionPerformed(evt);
             }
         });
 
-        campoX5.addActionListener(new java.awt.event.ActionListener() {
+        campX7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoX5ActionPerformed(evt);
+                campX7ActionPerformed(evt);
             }
         });
 
@@ -181,15 +180,15 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
-        campX5.addActionListener(new java.awt.event.ActionListener() {
+        campX9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campX5ActionPerformed(evt);
+                campX9ActionPerformed(evt);
             }
         });
 
-        campoX7.addActionListener(new java.awt.event.ActionListener() {
+        campX11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                campoX7ActionPerformed(evt);
+                campX11ActionPerformed(evt);
             }
         });
 
@@ -221,6 +220,17 @@ public class Ventana extends javax.swing.JFrame {
             }
         });
 
+        javax.swing.GroupLayout panelPlanoLayout = new javax.swing.GroupLayout(panelPlano);
+        panelPlano.setLayout(panelPlanoLayout);
+        panelPlanoLayout.setHorizontalGroup(
+            panelPlanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 442, Short.MAX_VALUE)
+        );
+        panelPlanoLayout.setVerticalGroup(
+            panelPlanoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -233,15 +243,15 @@ public class Ventana extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(lblX10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(campoX7))
+                                .addComponent(campX11))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(lblX9)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(campX6))
+                                .addComponent(campX10))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(lblX11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(campX5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(campX9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
@@ -257,190 +267,193 @@ public class Ventana extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addComponent(campY11)))
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonTriangulo)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jButtonTriangulo))
+                    .addComponent(lblCuadrado1)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblCuadrado)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX8))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX7))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX6))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campoX4))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campoX3))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campX2))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campX1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblY1)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY1))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY2))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY3)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY3))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY4)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addComponent(jButtonCuadro))
-                            .addComponent(lblCuadrado1)
+                                .addComponent(lblY7)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY5))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY8)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY6))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY5)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY7))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY6)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonRectangulo))
+                    .addComponent(lblCuadrado2)
+                    .addComponent(lblCuadrado)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX4))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX3))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX2))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addComponent(lblX1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campX1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campoX6))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campoX5))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campX4))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                        .addComponent(lblX8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campX3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(lblY7)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY5))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY6))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY5)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY7))
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                        .addComponent(lblY6)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(campY8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(18, 18, 18)
-                                .addComponent(jButtonRectangulo))
-                            .addComponent(lblCuadrado2))
-                        .addGap(20, 471, Short.MAX_VALUE))))
+                                .addComponent(lblY1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY1))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY2))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY3))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(lblY4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(campY4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18)
+                        .addComponent(jButtonCuadro)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(panelPlano, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblCuadrado)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX1)
-                    .addComponent(campX1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY1)
-                    .addComponent(campY1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelPlano, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
+                        .addComponent(lblCuadrado)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX1)
+                            .addComponent(campX1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY1)
+                            .addComponent(campY1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblX2)
+                                    .addComponent(campX2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblY2)
+                                    .addComponent(campY2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblX3)
+                                    .addComponent(campX3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblY3)
+                                    .addComponent(campY3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addComponent(jButtonCuadro)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblX2)
-                            .addComponent(campX2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblY2)
-                            .addComponent(campY2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblX3)
-                            .addComponent(campoX3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblY3)
-                            .addComponent(campY3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jButtonCuadro)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX4)
-                    .addComponent(campoX4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY4)
-                    .addComponent(campY4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(lblCuadrado1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX8)
-                    .addComponent(campX3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY7)
-                    .addComponent(campY5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblX5)
+                            .addComponent(lblX4)
                             .addComponent(campX4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblY8)
-                            .addComponent(campY6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblY4)
+                            .addComponent(campY4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCuadrado1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX8)
+                            .addComponent(campX5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY7)
+                            .addComponent(campY5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblX5)
+                                    .addComponent(campX6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblY8)
+                                    .addComponent(campY6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(lblX6)
+                                    .addComponent(campX7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblY5)
+                                    .addComponent(campY7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(jButtonRectangulo)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblX6)
-                            .addComponent(campoX5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblY5)
-                            .addComponent(campY7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
+                            .addComponent(lblX7)
+                            .addComponent(campX8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY6)
+                            .addComponent(campY8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
-                        .addComponent(jButtonRectangulo)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX7)
-                    .addComponent(campoX6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY6)
-                    .addComponent(campY8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(lblCuadrado2)
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX11)
-                    .addComponent(campX5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY11)
-                    .addComponent(campY9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX9)
-                    .addComponent(campX6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY9)
-                    .addComponent(campY10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonTriangulo))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblX10)
-                    .addComponent(campoX7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblY10)
-                    .addComponent(campY11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(14, Short.MAX_VALUE))
+                        .addComponent(lblCuadrado2)
+                        .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX11)
+                            .addComponent(campX9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY11)
+                            .addComponent(campY9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX9)
+                            .addComponent(campX10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY9)
+                            .addComponent(campY10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButtonTriangulo))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lblX10)
+                            .addComponent(campX11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblY10)
+                            .addComponent(campY11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(0, 3, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void campX1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX1ActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_campX1ActionPerformed
 
-    private void campoX3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoX3ActionPerformed
+    private void campX3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoX3ActionPerformed
+    }//GEN-LAST:event_campX3ActionPerformed
 
     private void campY1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campY1ActionPerformed
         // TODO add your handling code here:
@@ -450,46 +463,100 @@ public class Ventana extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_campY5ActionPerformed
 
-    private void campX3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX3ActionPerformed
+    private void campX5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campX3ActionPerformed
+    }//GEN-LAST:event_campX5ActionPerformed
 
-    private void campoX5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoX5ActionPerformed
+    private void campX7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoX5ActionPerformed
+    }//GEN-LAST:event_campX7ActionPerformed
 
     private void campY9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campY9ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_campY9ActionPerformed
 
-    private void campX5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX5ActionPerformed
+    private void campX9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campX5ActionPerformed
+    }//GEN-LAST:event_campX9ActionPerformed
 
-    private void campoX7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campoX7ActionPerformed
+    private void campX11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campX11ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_campoX7ActionPerformed
+    }//GEN-LAST:event_campX11ActionPerformed
 
     private void jButtonCuadroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCuadroActionPerformed
-        dibujar();
+        try {
+            int[] aux = new int[8];
+
+            aux[0] = Integer.parseInt(campX1.getText());
+            aux[1] = Integer.parseInt(campY1.getText());
+            aux[2] = Integer.parseInt(campX2.getText());
+            aux[3] = Integer.parseInt(campY2.getText());
+            aux[4] = Integer.parseInt(campX3.getText());
+            aux[5] = Integer.parseInt(campY3.getText());
+            aux[6] = Integer.parseInt(campX4.getText());
+            aux[7] = Integer.parseInt(campY4.getText());
+
+            dibujar(aux);
+            Cuadrado cuadrado = new Cuadrado((short) (aux[0] - aux[1]));
+            JOptionPane.showMessageDialog(this, "Area de la figura:"+cuadrado.getArea(), "Area", JOptionPane.INFORMATION_MESSAGE);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Diligencie los datos!", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+
     }//GEN-LAST:event_jButtonCuadroActionPerformed
 
     private void jButtonRectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRectanguloActionPerformed
-        dibujar();
+        try {
+            int[] aux = new int[8];
+
+            aux[0] = Integer.parseInt(campX5.getText());
+            aux[1] = Integer.parseInt(campY5.getText());
+            aux[2] = Integer.parseInt(campX6.getText());
+            aux[3] = Integer.parseInt(campY6.getText());
+            aux[4] = Integer.parseInt(campX7.getText());
+            aux[5] = Integer.parseInt(campY7.getText());
+            aux[6] = Integer.parseInt(campX8.getText());
+            aux[7] = Integer.parseInt(campY8.getText());
+
+            dibujar(aux);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Diligencie los datos!", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButtonRectanguloActionPerformed
 
     private void jButtonTrianguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTrianguloActionPerformed
-        dibujar();
+        try {
+            int[] aux = new int[8];
+
+            aux[0] = Integer.parseInt(campX9.getText());
+            aux[1] = Integer.parseInt(campY9.getText());
+            aux[2] = Integer.parseInt(campX10.getText());
+            aux[3] = Integer.parseInt(campY10.getText());
+            aux[4] = Integer.parseInt(campX11.getText());
+            aux[5] = Integer.parseInt(campY11.getText());
+            aux[6] = Integer.parseInt(campY11.getText());
+            aux[7] = Integer.parseInt(campY11.getText());
+
+            dibujar(aux);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(this, "Diligencie los datos!", "Error", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_jButtonTrianguloActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField campX1;
+    private javax.swing.JTextField campX10;
+    private javax.swing.JTextField campX11;
     private javax.swing.JTextField campX2;
     private javax.swing.JTextField campX3;
     private javax.swing.JTextField campX4;
     private javax.swing.JTextField campX5;
     private javax.swing.JTextField campX6;
+    private javax.swing.JTextField campX7;
+    private javax.swing.JTextField campX8;
+    private javax.swing.JTextField campX9;
     private javax.swing.JTextField campY1;
     private javax.swing.JTextField campY10;
     private javax.swing.JTextField campY11;
@@ -501,11 +568,6 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JTextField campY7;
     private javax.swing.JTextField campY8;
     private javax.swing.JTextField campY9;
-    private javax.swing.JTextField campoX3;
-    private javax.swing.JTextField campoX4;
-    private javax.swing.JTextField campoX5;
-    private javax.swing.JTextField campoX6;
-    private javax.swing.JTextField campoX7;
     private javax.swing.JButton jButtonCuadro;
     private javax.swing.JButton jButtonRectangulo;
     private javax.swing.JButton jButtonTriangulo;
@@ -534,5 +596,7 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JLabel lblY7;
     private javax.swing.JLabel lblY8;
     private javax.swing.JLabel lblY9;
+    private javax.swing.JPanel panelPlano;
     // End of variables declaration//GEN-END:variables
+
 }

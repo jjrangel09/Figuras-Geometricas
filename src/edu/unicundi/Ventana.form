@@ -31,17 +31,17 @@
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblX10" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="campoX7" max="32767" attributes="0"/>
+                              <Component id="campX11" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblX9" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="campX6" max="32767" attributes="0"/>
+                              <Component id="campX10" max="32767" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Component id="lblX11" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="campX5" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="campX9" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -64,115 +64,112 @@
                       </Group>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButtonTriangulo" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
                   </Group>
+                  <Component id="lblCuadrado1" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="lblCuadrado" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campoX4" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campoX3" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campX2" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campX1" min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="lblY1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY1" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY2" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY2" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY3" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY4" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY4" min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButtonCuadro" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblX7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX8" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="lblCuadrado1" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campoX6" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campoX5" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campX4" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblX8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campX3" min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="lblY7" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY5" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY8" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY6" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY5" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY7" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblY6" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="campY8" min="-2" pref="30" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jButtonRectangulo" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblX6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX7" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="lblCuadrado2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX6" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX5" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
-                      <EmptySpace min="20" pref="471" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblY7" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY5" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY6" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY5" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY7" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY6" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY8" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButtonRectangulo" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="lblCuadrado2" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblCuadrado" alignment="0" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX4" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX3" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX2" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="lblX1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campX1" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="lblY1" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY1" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY2" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY3" max="32767" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblY4" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                              <Component id="campY4" min="-2" pref="30" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButtonCuadro" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="panelPlano" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="19" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -180,106 +177,112 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="lblCuadrado" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campX1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY1" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
               <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="panelPlano" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblCuadrado" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblX2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campX2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblY2" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblX1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblX2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campX2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campY2" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblX3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campX3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblY3" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campY3" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Component id="jButtonCuadro" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblX3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campoX3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblY3" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campY3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
-                      <Component id="jButtonCuadro" min="-2" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campoX4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY4" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="lblCuadrado1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campX3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY5" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblX5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblX4" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="campX4" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblY8" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campY6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY4" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblCuadrado1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY5" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblX5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campX6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblY8" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campY6" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="lblX6" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campX7" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblY5" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="campY7" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                              <Component id="jButtonRectangulo" min="-2" max="-2" attributes="0"/>
+                          </Group>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lblX6" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campoX5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblY5" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="campY7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblX7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY8" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="lblCuadrado2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY9" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButtonTriangulo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblX10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campX11" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblY10" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="campY11" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="3" max="32767" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Component id="jButtonRectangulo" min="-2" max="-2" attributes="0"/>
-                  </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campoX6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY8" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="lblCuadrado2" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campX5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY11" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY9" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campX6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButtonTriangulo" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lblX10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campoX7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="lblY10" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="campY11" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="14" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -320,12 +323,12 @@
     </Component>
     <Component class="javax.swing.JTextField" name="campX2">
     </Component>
-    <Component class="javax.swing.JTextField" name="campoX3">
+    <Component class="javax.swing.JTextField" name="campX3">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campoX3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX3ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="campoX4">
+    <Component class="javax.swing.JTextField" name="campX4">
     </Component>
     <Component class="javax.swing.JLabel" name="lblY1">
       <Properties>
@@ -392,21 +395,21 @@
     </Component>
     <Component class="javax.swing.JTextField" name="campY7">
     </Component>
-    <Component class="javax.swing.JTextField" name="campX3">
+    <Component class="javax.swing.JTextField" name="campX5">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX5ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="campY8">
     </Component>
-    <Component class="javax.swing.JTextField" name="campX4">
+    <Component class="javax.swing.JTextField" name="campX6">
     </Component>
-    <Component class="javax.swing.JTextField" name="campoX5">
+    <Component class="javax.swing.JTextField" name="campX7">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campoX5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX7ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="campoX6">
+    <Component class="javax.swing.JTextField" name="campX8">
     </Component>
     <Component class="javax.swing.JLabel" name="lblCuadrado1">
       <Properties>
@@ -460,16 +463,16 @@
     </Component>
     <Component class="javax.swing.JTextField" name="campY11">
     </Component>
-    <Component class="javax.swing.JTextField" name="campX5">
+    <Component class="javax.swing.JTextField" name="campX9">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX5ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX9ActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JTextField" name="campX6">
+    <Component class="javax.swing.JTextField" name="campX10">
     </Component>
-    <Component class="javax.swing.JTextField" name="campoX7">
+    <Component class="javax.swing.JTextField" name="campX11">
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campoX7ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="campX11ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblCuadrado2">
@@ -514,5 +517,20 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonTrianguloActionPerformed"/>
       </Events>
     </Component>
+    <Container class="javax.swing.JPanel" name="panelPlano">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="442" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
   </SubComponents>
 </Form>
